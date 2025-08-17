@@ -1,0 +1,29 @@
+server:
+  port: 7000
+
+langchain4j:
+  open-ai:
+    #chat-model:
+    streaming-chat-model:
+      api-key: ${api-key}
+      model-name: deepseek-chat #deepseek-reasoner 切换r1
+      base-url: https://api.deepseek.com/v1
+      log-requests: true
+      log-responses: true
+
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/chat_memory_demo
+  datasource:
+    url: jdbc:mysql://localhost:3306/lc4j
+    username: root
+    password: 1206
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#logging:
+#  level:
+#    root: debug
+
+#logging.level.org.springframework: DEBUG
+#logging.level.dev.langchain4j: TRACE
