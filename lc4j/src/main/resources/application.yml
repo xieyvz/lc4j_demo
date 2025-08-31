@@ -5,7 +5,7 @@ langchain4j:
   open-ai:
     #chat-model:
     streaming-chat-model:
-      api-key: ${api-key}
+      api-key: ${Your_key}
       model-name: deepseek-chat #deepseek-reasoner 切换r1
       base-url: https://api.deepseek.com/v1
       log-requests: true
@@ -21,6 +21,12 @@ spring:
     username: root
     password: 1206
     driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: lc4j-chat
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
 #logging:
 #  level:
 #    root: debug
