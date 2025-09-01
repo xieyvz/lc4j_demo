@@ -16,11 +16,6 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/chat_memory_demo
-  datasource:
-    url: jdbc:mysql://localhost:3306/lc4j
-    username: root
-    password: 1206
-    driver-class-name: com.mysql.cj.jdbc.Driver
   application:
     name: lc4j-chat
   cloud:
